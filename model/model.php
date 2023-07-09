@@ -5,7 +5,6 @@ function f_pdoConnect() {         // Но лучше возвращать тип
 		if($db===null) {              // если небыло коннекта    
 			try {        
 				// для сервера
-				//$db = new PDO('mysql:host=localhost;dbname=notes','dmrDmitriy','asbk2tlgFF1t',[
 				// локально
 				$db = new PDO('mysql:host=localhost;dbname=dbnotes','root','',[
 				PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
